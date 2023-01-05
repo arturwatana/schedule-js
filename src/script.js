@@ -1,7 +1,7 @@
 /*
-*   Criar agenda que, ao trocar o mes em questao, mostre os agendamentos do mes. - ok
-    Seja possivel tambem criar um agendamento - ok
-    
+*   Criar agenda que, ao trocar o mes em questao, mostre as tasks do mes. - ok
+    Seja possivel tambem criar uma task - ok
+    Consulta de tasks por dia - ok
 */
 
 const months = document.getElementById("months");
@@ -113,8 +113,6 @@ class Schedule {
 
  `;
     taskList.appendChild(ul);
-    console.log(findedMonth);
-    console.log(day);
   }
 
   showEvents() {
