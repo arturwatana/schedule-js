@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <div class="bigContainer">
+    <div class="container">
+      <div id="form">
+        <div id="addEvent">
+          
+          <label class="form-Add" for="taskName">Digite a task que deseja adicionar:</label>
+          <input
+          class="form-Add"
+            type="text"
+            id="taskName"
+            placeholder="Descricao da task"
+          />
+          <div class="form-Months"class="form-Add">
+            
+          <select name="daysTasks" id="daysTasks">
+            
+          </select>
+          <select name="monthsTask" id="monthToAdd">
+            <option value="January">Janeiro</option>
+            <option value="February">Fevereiro</option>
+            <option value="March">Marco</option>
+            <option value="April">Abril</osption>
+            <option value="May">Maio</option>
+            <option value="June">Junho</option>
+            <option value="July">Julho</option>
+            <option value="August">Agosto</option>
+            <option value="September">Setembro</option>
+            <option value="October">Outubro</option>
+            <option value="November">Novembro</option>
+            <option value="December">Dezembro</option>
+          </select>
+        </div>
+          <button id="addTaskButton" class="form-Add">Adicionar Task</button>
+        </div>
+
+        <div id="check-schedule">
+          <label for="months">Selecione o mes para consultar:</label>
+          <select name="months" id="months">
+            <option value="January">Janeiro</option>
+            <option value="February">Fevereiro</option>
+            <option value="March">Marco</option>
+            <option value="April">Abril</option>
+            <option value="May">Maio</option>
+            <option value="June">Junho</option>
+            <option value="July">Julho</option>
+            <option value="August">Agosto</option>
+            <option value="September">Setembro</option>
+            <option value="October">Outubro</option>
+            <option value="November">Novembro</option>
+            <option value="December">Dezembro</option>
+          </select>
+        </div>
+      </div>
+      <div id="schedule"></div>
+     
+    </div>
+    <div id="tasksByDay">
+      <div class="taskQuery">
+        <div class="inputDay">
+          <h2>Consulta de tasks por dia:</h2>
+        <label for="dayQuery">Selecione um dia:</label>
+        <select name="daysTasksQuery" id="dayQuery">
+          
+        </select>
+      </div>
+        <label for="months">Selecione o mes para consultar:</label>
+          <select name="months" id="monthsQuery">
+            <option value="January">Janeiro</option>
+            <option value="February">Fevereiro</option>
+            <option value="March">Marco</option>
+            <option value="April">Abril</option>
+            <option value="May">Maio</option>
+            <option value="June">Junho</option>
+            <option value="July">Julho</option>
+            <option value="August">Agosto</option>
+            <option value="September">Setembro</option>
+            <option value="October">Outubro</option>
+            <option value="November">Novembro</option>
+            <option value="December">Dezembro</option>
+          </select>
+          <button id="taskQueryButton">Consultar</button>
+      </div>
+      <div id="taskList"></div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

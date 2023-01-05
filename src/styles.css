@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background: #252525;
+  color: #ffffff;
+}
+.bigContainer {
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.7em;
+  width: 80vw;
+}
+
+#addEvent,
+#check-schedule,
+.taskQuery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #424369;
+  padding: 0.25em;
+  border-radius: 5px;
+  border: 1px solid #ff9677;
+}
+
+#check-schedule {
+  margin-top: 1em;
+}
+.form-Add {
+  margin: 0.5em;
+  text-align: center;
+}
+
+#form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.scheduleBorderOn {
+  border: 1px solid #78a6c8;
+}
+#taskName {
+  width: 230px;
+}
+#schedule {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.task {
+  border: 1px solid #ff9677;
+  border-radius: 10px;
+  background-color: #424369;
+  height: 11em;
+  width: 11em;
+  padding: 0.25em;
+  margin: 0.3em;
+  overflow: hidden;
+}
+
+#months {
+  margin-top: 0.5em;
+}
+
+#addTaskButton,
+#taskQueryButton {
+  width: 11em;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+}
+
+#tasksByDay {
+  width: 20vw;
+}
+
+#taskList {
+  border: 1px solid #78a6c8;
+  margin-top: 5em;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+.taskQuery {
+  margin-top: 18em;
+}
+.taskQuery,
+#taskList {
+  margin-right: 5em;
+  font-size: 18px;
+  text-align: center;
+}
+
+.inputDay {
+  margin-top: 2em;
+}
+
+#taskList li {
+  list-style-type: none;
+}
