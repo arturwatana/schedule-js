@@ -32,8 +32,7 @@ for (let i = 1; i <= 31; i++) {
 class Schedule {
   constructor(months) {
     this.months = [];
-    let monthIndex = 0;
-    months.split(",").forEach((e) => {
+    months.split(",").forEach((e, monthIndex) => {
       this.months.push({
         name: e,
         days: [],
